@@ -1,0 +1,93 @@
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 32px;
+  align-items: start;
+}
+
+.detail-hero {
+  display: flex; align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.detail-emoji { font-size: 56px; line-height: 1; }
+
+.detail-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.detail-creator {
+  font-size: 14px; color: var(--text3);
+}
+.detail-creator strong { color: var(--text2); }
+
+.detail-desc h3 {
+  font-size: 16px; font-weight: 600;
+  color: var(--text); margin-bottom: 12px;
+}
+.detail-desc p {
+  font-size: 15px; color: var(--text2);
+  line-height: 1.8; white-space: pre-wrap;
+}
+
+/* Donations */
+.donations-section h3 {
+  font-size: 16px; font-weight: 600;
+  color: var(--text); margin-bottom: 16px;
+}
+
+.donations-list { display: flex; flex-direction: column; gap: 12px; }
+
+.donation-item {
+  display: flex; align-items: center; gap: 12px;
+}
+
+.donor-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  color: var(--accent);
+  font-weight: 700; font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.donor-name { font-size: 14px; color: var(--text); font-weight: 500; }
+.donor-amount { font-size: 12px; color: var(--text3); margin-top: 2px; }
+
+/* Sidebar */
+.sidebar-card { padding: 24px; position: sticky; top: 80px; }
+
+.funding-stats {
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+
+.funding-raised {
+  font-family: var(--font-display);
+  font-size: 30px; font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.5px;
+}
+
+.funding-label { font-size: 12px; color: var(--text3); margin-top: 2px; }
+.funding-target { font-size: 16px; color: var(--text); font-weight: 600; }
+.funding-pct { font-size: 13px; color: var(--text3); text-align: center; margin-top: -8px; }
+
+/* Quick amounts */
+.quick-amounts {
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .detail-layout { grid-template-columns: 1fr; }
+  .sidebar-card { position: static; }
+}

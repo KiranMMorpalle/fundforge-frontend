@@ -1,0 +1,153 @@
+/* Dashboard */
+.dash-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap; gap: 16px;
+}
+
+.filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  min-width: 240px;
+}
+
+.search-input {
+  flex: 1;
+  max-width: 400px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-select { width: 160px; }
+
+.sort-btns {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.active-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--accent-dim);
+  border: 1px solid rgba(232,201,109,0.25);
+  color: var(--accent);
+  font-size: 12px; font-weight: 500;
+  padding: 4px 10px; border-radius: 100px;
+}
+
+.filter-pill button {
+  background: none; border: none;
+  color: var(--accent); font-size: 14px;
+  cursor: pointer; line-height: 1; padding: 0;
+}
+.filter-pill button:hover { color: var(--danger); }
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text3);
+}
+.empty-state h3 { font-size: 18px; color: var(--text2); margin: 16px 0 8px; }
+.empty-state p { font-size: 14px; }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 48px;
+}
+
+.page-nums { display: flex; gap: 4px; }
+
+/* Campaign Card */
+.campaign-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.campaign-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 0;
+}
+
+.campaign-emoji {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.campaign-card-body {
+  padding: 16px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.campaign-title {
+  font-family: var(--font-display);
+  font-size: 18px; font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+}
+
+.campaign-desc {
+  font-size: 13px; color: var(--text2); line-height: 1.6;
+  flex: 1;
+}
+
+.campaign-meta {
+  display: flex; align-items: center;
+  gap: 8px; flex-wrap: wrap;
+}
+
+.campaign-creator { font-size: 12px; color: var(--text3); }
+.campaign-category {
+  font-size: 11px;
+  background: var(--bg3);
+  color: var(--text3);
+  padding: 2px 8px; border-radius: 100px;
+  border: 1px solid var(--border);
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+
+.campaign-progress { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+
+.campaign-amounts {
+  display: flex; justify-content: space-between;
+  font-size: 13px;
+}
+.raised { color: var(--accent); font-weight: 600; }
+.target { color: var(--text3); }
+
+.progress-pct {
+  font-size: 12px; color: var(--text3);
+  text-align: right;
+}
